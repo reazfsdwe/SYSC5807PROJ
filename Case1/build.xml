@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="pit-ant-example">
+
+	<property name="classOutputDir" value="build" />
+	<property name="jacoco.destfile" value="${classOutputDir}/jacoco.exec" />
+	<property name="jacoco.reportdir" value="${classOutputDir}/jacoco-report" />
+	<!-- classpath for pitest and any plugins -->
+	<path id="pitest.path">
+		<pathelement location="lib/pitest-1.15.8.jar" />
+		<pathelement location="lib/pitest-entry-1.15.8.jar" />
+		<pathelement location="lib/pitest-ant-1.15.8.jar" />
+		<pathelement location="lib/commons-text-1.13.0.jar" />
+		<pathelement location="lib/commons-lang3-3.17.0.jar" />
+
+	</path>
+
+	<path id="jacoco.path">
+		<pathelement location="lib/jacocoant.jar" />
+		<pathelement location="lib/jacocoagent.jar" />
+	</path>
+	<taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+		<classpath refid="jacoco.path" />
+	</taskdef>
+	<path id="test.path">
+		<pathelement location="${classOutputDir}/classes" />
+		<pathelement location="${classOutputDir}/test-classes" />
+		<pathelement location="lib/hamcrest-all-1.3.jar" />
+		<pathelement location="lib/junit-4.13.2.jar" />
+		<pathelement location="lib/commons-text-1.13.0.jar" />
+		<pathelement location="lib/commons-lang3-3.17.0.jar" />
+	</path>
+
+	<target name="clean">
+		<delete dir="${classOutputDir}" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${classOutputDir}/classes" />
+		<javac srcdir="src" includeantruntime="false" debug="true" debuglevel="source,lines" destdir="${classOutputDir}/classes">
+			<classpath refid="test.path" />
+		</javac>
+	</target>
+
+	<target name="compile-tests" depends="compile">
+		<mkdir dir="${classOutputDir}/test-classes" />
+		<javac srcdir="test" includeantruntime="false" debug="true" debuglevel="source,lines" destdir="${classOutputDir}/test-classes">
+			<classpath refid="test.path" />
+
+		</javac>
+	</target>
+
+	<target name="test" depends="compile-tests">
+		<mkdir dir="${classOutputDir}/test-result" />
+		<!-- Run JUnit tests with JaCoCo coverage -->
+		<jacoco:coverage xmlns:jacoco="antlib:org.jacoco.ant" destfile="${jacoco.destfile}">
+			<junit fork="true" forkmode="once">
+				<classpath refid="test.path" />
+				<batchtest todir="${classOutputDir}/test-result">
+					<fileset dir="test">
+						<include name="**/*Test*.java" />
+					</fileset>
+					<formatter type="xml" />
+				</batchtest>
+			</junit>
+		</jacoco:coverage>
+
+		<!-- Generate JUnit report -->
+		<junitreport todir="${classOutputDir}/test-result">
+			<fileset dir="${classOutputDir}/test-result">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${classOutputDir}/test-result/report" />
+		</junitreport>
+	</target>
+
+	<!-- Generate JaCoCo coverage report -->
+	<target name="jacoco-report" depends="test">
+		<mkdir dir="${jacoco.reportdir}" />
+		<jacoco:report xmlns:jacoco="antlib:org.jacoco.ant">
+			<executiondata>
+				<file file="${jacoco.destfile}" />
+			</executiondata>
+			<structure name="JaCoCo Coverage Report">
+				<classfiles>
+					<fileset dir="${classOutputDir}/classes">
+						<include name="**/*.class" />
+						<exclude name="**/R.class" />
+						<exclude name="**/R$*.class" />
+						<exclude name="**/BuildConfig.class" />
+					</fileset>
+				</classfiles>
+				<sourcefiles encoding="UTF-8">
+					<fileset dir="src" />
+				</sourcefiles>
+			</structure>
+			<html destdir="${jacoco.reportdir}/html" />
+		</jacoco:report>
+	</target>
+
+	<taskdef name="pitest" classname="org.pitest.ant.PitestTask" classpathref="pitest.path" />
+
+
+
+
+
+
+
+
+
+	<!-- classpath for compiling and testing the code. Note it does not include pitest and it's dependencies -->
+	<path id="test.path">
+
+		<pathelement location="${classOutputDir}/classes" />
+
+		<pathelement location="${classOutputDir}/test-classes" />
+		<pathelement location="lib/hamcrest-all-1.3.jar" />
+		<pathelement location="lib/junit-4.13.2.jar" />
+		<pathelement location="lib/commons-text-1.13.0.jar" />
+		<pathelement location="lib/commons-lang3-3.17.0.jar" />
+
+	</path>
+
+
+
+	<!-- run pitest. note that the filters for tests and classes refer to package/class names, not source file named -->
+	<target name="pit" depends="test">
+		<path id="mutation.path">
+			<path refid="pitest.path"/>
+			<path refid="test.path"/>
+		</path>
+		<!-- export feature has been activated to write mutants to file -->
+		<pitest features="+EXPORT" pitClasspath="pitest.path" threads="8" classPath="mutation.path" targetTests="quatest.QuadraticTestCombAuto" targetClasses="qua.QuadraticReturn" reportDir="pitReports" sourceDir="src" outputFormats ="HTML,XML" />
+	</target>
+
+</project>

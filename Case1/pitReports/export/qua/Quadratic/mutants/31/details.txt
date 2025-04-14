@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.Quadratic, method=sqrtByNewton, methodDesc=(D)D], indexes=[16], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=Quadratic.java, block=[2], lineNumber=66, description=Replaced double division with multiplication, testsInOrder=[]]

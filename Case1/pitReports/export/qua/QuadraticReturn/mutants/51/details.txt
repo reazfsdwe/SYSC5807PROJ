@@ -1,0 +1,2 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.QuadraticReturn, method=sqrtByNewton, methodDesc=(D)D], indexes=[14], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=QuadraticReturn.java, block=[2], lineNumber=98, description=Replaced double addition with subtraction, testsInOrder=[]]
+[]]

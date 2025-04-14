@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.QuadraticReturn, method=solveQuadratic, methodDesc=(DDD)V], indexes=[167], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=QuadraticReturn.java, block=[29], lineNumber=41, description=Replaced double multiplication with division, testsInOrder=[]]

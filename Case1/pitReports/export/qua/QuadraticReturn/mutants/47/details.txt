@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.QuadraticReturn, method=sign, methodDesc=(D)I], indexes=[14], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator], filename=QuadraticReturn.java, block=[3], lineNumber=86, description=replaced int return with 0 for qua/QuadraticReturn::sign, testsInOrder=[]]

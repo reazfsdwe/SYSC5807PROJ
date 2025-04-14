@@ -1,0 +1,2 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.QuadraticReturn, method=solveQuadratic, methodDesc=(DDD)V], indexes=[149], mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator], filename=QuadraticReturn.java, block=[25], lineNumber=37, description=removed call to java/io/PrintStream::println, testsInOrder=[]]
+n::solveQuadraticR, testsInOrder=[]]

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="LAPTOP-320U6G4U" name="quatest.QuadraticTestCombAuto" skipped="0" tests="56" time="0.163" timestamp="2025-04-13T22:38:26">
+  <properties>
+    <property name="ant.library.dir" value="C:\apache-ant-1.10.15\lib" />
+    <property name="classOutputDir" value="build" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.specification.version" value="19" />
+    <property name="ant.project.name" value="pit-ant-example" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="java.class.path" value="C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\build\classes;C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\build\test-classes;C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\lib\hamcrest-all-1.3.jar;C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\lib\junit-4.13.2.jar;C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\lib\commons-text-1.13.0.jar;C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\lib\commons-lang3-3.17.0.jar;C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1;C:\javajdk\jdk-19.0.1\lib;C:\apache-ant-1.10.15\lib\ant-launcher.jar;C:\apache-ant-1.10.15\lib\ant.jar;C:\apache-ant-1.10.15\lib\ant-junit.jar;C:\apache-ant-1.10.15\lib\ant-junit4.jar" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="user.variant" value="" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="java.vm.specification.version" value="19" />
+    <property name="os.name" value="Windows 10" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="CN" />
+    <property name="sun.boot.library.path" value="C:\javajdk\jdk-19.0.1\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\junittestcases7118451339655884119.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\build\test-result\IGNORETHIS.xml crashfile=C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\junitvmwatcher10044227334241483041.properties propsfile=C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\junit16854331068598255661.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="C:\Users\10340" />
+    <property name="ant.file.pit-ant-example" value="C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\build.xml" />
+    <property name="jacoco.reportdir" value="build/jacoco-report" />
+    <property name="user.language" value="zh" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="_jacoco.agentFile" value="C:\Users\10340\AppData\Local\Temp\jacocoagent18242574456985195859.jar" />
+    <property name="java.version.date" value="2022-10-18" />
+    <property name="java.home" value="C:\javajdk\jdk-19.0.1" />
+    <property name="basedir" value="C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1" />
+    <property name="file.separator" value="\" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="ant.java.version" value="19" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="user.script" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.runtime.version" value="19.0.1+10-21" />
+    <property name="user.name" value="10340" />
+    <property name="ant.file" value="C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1\build.xml" />
+    <property name="stdout.encoding" value="GBK" />
+    <property name="path.separator" value=";" />
+    <property name="os.version" value="10.0" />
+    <property name="ant.file.type.pit-ant-example" value="file" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.project.invoked-targets" value="jacoco-report" />
+    <property name="jacoco.destfile" value="build/jacoco.exec" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="ant.core.lib" value="C:\apache-ant-1.10.15\lib\ant.jar" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="java.io.tmpdir" value="C:\Users\10340\AppData\Local\Temp\" />
+    <property name="java.version" value="19.0.1" />
+    <property name="user.dir" value="C:\Users\10340\Desktop\UOYR1\WINTER\SYSC5807\PROJ\Case1" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="C:\apache-ant-1.10.15" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="native.encoding" value="GBK" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.15 compiled on August 25 2024" />
+    <property name="java.library.path" value="C:\javajdk\jdk-19.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Perl64\site\bin;C:\Perl64\bin;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files\swipl\bin;C:\Program Files\NuSMV-2.6.0-win64\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\10340\AppData\Local\Programs\MiKTeX\miktex\bin;C:\texlive\2023;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Program Files\Docker\Docker\resources\bin;C:\w64devkit\bin;C:\javajdk\jdk-19.0.1\bin;C:\raylib\w64devkit\bin;C:\apache-ant-1.10.15\bin;C:\javajdk\jdk-19.0.1\jre\bin;C:\Users\10340\Downloads\chromedriver-win64\chromedriver-win64;C:\Users\10340\AppData\Local\Programs\DKMLNA~1\usr\bin;C:\Users\10340\AppData\Local\Programs\DKMLNA~1\bin;C:\Users\10340\.cargo\bin;C:\Users\10340\AppData\Roaming\local\bin;C:\Users\10340\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\10340\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\10340\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\10340\AppData\Local\Programs\Python\Python39\;C:\Users\10340\AppData\Local\Microsoft\WindowsApps;C:\Users\10340\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2021.2.1\bin;C:\Program Files (x86)\Tencent\QQGameTempest\Hall.57711\;C:\Users\10340\.dotnet\tools;C:\Program Files\JetBrains\DataGrip 2021.3.2\bin;C:\Users\10340\AppData\Roaming\npm;C:\Users\10340\AppData\Local\GitHubDesktop\bin;C:\Users\10340\Desktop\Discord BOT\ffmpeg-2022-05-04-git-0914e3a14a-full_build\bin;C:\ghcup\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.2\bin;C:\Gradle\gradle-8.13\bin;C:\Users\10340\AppData\Local\Programs\MiKTeX\miktex\bin\;C:\texlive\2023\bin\windows;C:\texlive\2023;C:\Program Files\MiKTeX\miktex\bin\;;." />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="stderr.encoding" value="GBK" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="19.0.1+10-21" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="java.class.version" value="63.0" />
+  </properties>
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testValidInputInteger" time="0.016" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="endTime" time="0.005" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase0" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase1" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase2" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase3" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase4" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase5" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase6" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase7" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase8" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase9" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testPrecisionLossInputShouldFail" time="0.002" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testScientificNotationShouldFail" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testComplexNumber2" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testComplexNumber3" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testComplexNumber4" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testComplexNumber5" time="0.007" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testComplexNumber" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testTooLargeNumberNotAllowed" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase10" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase11" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase12" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase13" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase14" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase15" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase16" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase17" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase18" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase19" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase20" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase21" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase22" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase23" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase24" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase25" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase26" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase27" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase28" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase29" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase30" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase31" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase32" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase33" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase34" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase35" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase36" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase37" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase38" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testCase39" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testInputWithTrailingZero" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testRealNumber1" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testRealNumber3" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testRealNumber4" time="0.001" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testRealNumber5" time="0.0" />
+  <testcase classname="quatest.QuadraticTestCombAuto" name="testValidInputDecimal" time="0.0" />
+  <system-out><![CDATA[Test took: 0.198 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

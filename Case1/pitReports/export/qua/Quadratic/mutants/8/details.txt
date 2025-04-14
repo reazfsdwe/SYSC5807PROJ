@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.Quadratic, method=solveQuadratic, methodDesc=(DDD)V], indexes=[37], mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator], filename=Quadratic.java, block=[5], lineNumber=23, description=changed conditional boundary, testsInOrder=[]]

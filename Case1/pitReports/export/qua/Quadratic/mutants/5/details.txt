@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.Quadratic, method=solveQuadratic, methodDesc=(DDD)V], indexes=[23], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=Quadratic.java, block=[2], lineNumber=19, description=negated conditional, testsInOrder=[]]

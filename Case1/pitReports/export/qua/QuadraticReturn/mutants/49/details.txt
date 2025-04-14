@@ -1,0 +1,2 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.QuadraticReturn, method=sign, methodDesc=(D)I], indexes=[6], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=QuadraticReturn.java, block=[0], lineNumber=86, description=negated conditional, testsInOrder=[]]
+io/PrintStream::println, testsInOrder=[]]

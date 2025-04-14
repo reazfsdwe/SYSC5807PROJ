@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=qua.Quadratic, method=sqrtByNewton, methodDesc=(D)D], indexes=[50], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator], filename=Quadratic.java, block=[6], lineNumber=76, description=replaced double return with 0.0d for qua/Quadratic::sqrtByNewton, testsInOrder=[]]
